@@ -1,0 +1,12 @@
+{
+  "name": "circleci-build-trigger",
+  "version": "1.0.0",
+  "description": "circleci-build-trigger",
+  "main": "handler.js",
+  "repository": {
+    "url": "ssh://git@github.com/tsub/circleci-build-trigger",
+    "type": "git"
+  },
+  "author": "tsub <tsubasatakayama511@gmail.com>",
+  "license": "MIT"
+}
