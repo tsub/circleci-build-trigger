@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "circleci-build-trigger",
   "version": "1.0.0",
   "description": "circleci-build-trigger",
