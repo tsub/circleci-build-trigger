@@ -8,5 +8,8 @@
     "type": "git"
   },
   "author": "tsub <tsubasatakayama511@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "serverless": "^1.0.3"
+  }
 }
