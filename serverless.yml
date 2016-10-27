@@ -1,4 +1,4 @@
-service: .
+service: circleci-build-trigger
 
 provider:
   name: aws
