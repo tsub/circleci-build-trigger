@@ -6,5 +6,5 @@ provider:
   region: ap-northeast-1
 
 functions:
-  hello:
-    handler: handler.hello
+  trigger:
+    handler: handler.trigger
