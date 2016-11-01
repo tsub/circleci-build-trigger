@@ -16,5 +16,9 @@
   "dependencies": {
     "axios": "^0.15.2",
     "dotenv": "^2.0.0"
+  },
+  "scripts": {
+    "deploy": "serverless deploy",
+    "invoke": "serverless invoke -f trigger"
   }
 }
