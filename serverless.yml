@@ -8,3 +8,5 @@ provider:
 functions:
   trigger:
     handler: handler.trigger
+    events:
+      - schedule: ${env:SCHEDULE_EXPRESSION}
