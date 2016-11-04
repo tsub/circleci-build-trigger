@@ -5,8 +5,15 @@ provider:
   runtime: nodejs4.3
   region: ap-northeast-1
 
+custom:
+  writeEnvVars: ${file(serverless.env.yml)}
+
 functions:
   trigger:
     handler: handler.trigger
+    description: ${self:custom.writeEnvVars.PROJECT}
     events:
-      - schedule: ${env:SCHEDULE_EXPRESSION}
+      - schedule: ${self:custom.writeEnvVars.SCHEDULE_EXPRESSION}
+
+plugins:
+  - serverless-plugin-write-env-vars

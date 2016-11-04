@@ -15,10 +15,9 @@ Introduce use cases of this Lambda function.
 $ git clone git@github.com:tsub/circleci-build-trigger.git
 $ cd circleci-build-trigger
 $ npm install # or yarn install
-$ cp .env.template .env # and Set environment variables in .env
+$ cp serverless.env.yml{.template,} # and Set environment variables in .env
 $ export AWS_ACCESS_KEY_ID=<YOUR AWS_ACCESS_KEY_ID>
 $ export AWS_SECRET_ACCESS_KEY=<YOUR AWS_SECRET_ACCESS_KEY>
-$ export SCHEDULE_EXPRESSION="rate(1 weeks)"
 $ npm run deploy -- -s prod # or yarn run deploy -- -s prod
 ```
 
@@ -31,27 +30,8 @@ $ npm run deploy -- -s prod # or yarn run deploy -- -s prod
 
 * `$AWS_ACCESS_KEY_ID`
 * `$AWS_SECRET_ACCESS_KEY`
-* `$SCHEDULE_EXPRESSION`
 
-## About SCHEDULE_EXPRESSION
-
-[Schedule Expression Syntax for Rules - Amazon CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html)
-
-### Examples
-
-Run weekly.
-
-```
-rate(1 weeks)
-```
-
-Run at 00:00 am (UTC) every Monday.
-
-```
-cron(0 0 ? * Mon *)
-```
-
-## About .env
+## About serverless.env.yml
 
 ### CIRCLE_TOKEN
 
@@ -72,3 +52,23 @@ Git branch to build.
 ### TRIGGER_NAME
 
 Key name to use the [CircleCI build_parameters](https://circleci.com/docs/parameterized-builds/).
+
+### SCHEDULE_EXPRESSION
+
+Schedule rule to Start build.
+
+[Schedule Expression Syntax for Rules - Amazon CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html)
+
+### Examples
+
+Run weekly.
+
+```
+rate(1 weeks)
+```
+
+Run at 00:00 am (UTC) every Monday.
+
+```
+cron(0 0 ? * Mon *)
+```
