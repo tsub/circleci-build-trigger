@@ -51,9 +51,13 @@ e.g. `tsub/circleci-build-trigger`
 
 Git branch to build.
 
+e.g. `master`
+
 ### TRIGGER_NAME
 
 Key name to use the [CircleCI build_parameters](https://circleci.com/docs/parameterized-builds/).
+
+e.g. `CIRCLECI_BUILD_TRIGGER`
 
 ### SCHEDULE_EXPRESSION
 
