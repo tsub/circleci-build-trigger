@@ -11,6 +11,7 @@
   "author": "tsub <tsubasatakayama511@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "ci-yarn-upgrade": "^0.3.1",
     "serverless": "^1.0.3",
     "serverless-plugin-write-env-vars": "^1.0.1"
   },
