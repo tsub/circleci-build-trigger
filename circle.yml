@@ -20,7 +20,7 @@ deployment:
     commands:
       - >
         if [ -n "${CIRCLECI_BUILD_TRIGGER}" ]; then
-          ci-yarn-upgrade --execute
+          yarn run update --execute
         fi
 experimental:
   notify:
