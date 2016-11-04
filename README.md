@@ -18,6 +18,7 @@ $ npm install # or yarn install
 $ cp serverless.env.yml{.template,} # and Set environment variables in .env
 $ export AWS_ACCESS_KEY_ID=<YOUR AWS_ACCESS_KEY_ID>
 $ export AWS_SECRET_ACCESS_KEY=<YOUR AWS_SECRET_ACCESS_KEY>
+$ export AWS_REGION=<YOUR AWS_REGION>
 $ npm run deploy -- -s prod # or yarn run deploy -- -s prod
 ```
 
@@ -30,6 +31,7 @@ $ npm run deploy -- -s prod # or yarn run deploy -- -s prod
 
 * `$AWS_ACCESS_KEY_ID`
 * `$AWS_SECRET_ACCESS_KEY`
+* `$AWS_REGION` or `$AWS_DEFAULT_REGION`
 
 ## About serverless.env.yml
 
