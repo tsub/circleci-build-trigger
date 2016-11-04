@@ -11,7 +11,8 @@
   "author": "tsub <tsubasatakayama511@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "serverless": "^1.0.3"
+    "serverless": "^1.0.3",
+    "serverless-plugin-write-env-vars": "^1.0.1"
   },
   "dependencies": {
     "axios": "^0.15.2",
