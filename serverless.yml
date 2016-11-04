@@ -11,6 +11,7 @@ custom:
 functions:
   trigger:
     handler: handler.trigger
+    description: ${self:custom.writeEnvVars.PROJECT}
     events:
       - schedule: ${self:custom.writeEnvVars.SCHEDULE_EXPRESSION}
 
