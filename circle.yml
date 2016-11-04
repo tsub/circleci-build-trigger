@@ -1,0 +1,29 @@
+machine:
+  timezone: Asia/Tokyo
+  node:
+    version: 7.0.0
+dependencies:
+  cache_directories:
+    - "~/.yarn-cache"
+  pre:
+    - npm install -g npm
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
+    - yarn --version
+  override:
+    - yarn install
+test:
+  override:
+    - echo "No tests"
+deployment:
+  master:
+    branch: master
+    commands:
+      - >
+        if [ -n "${CIRCLECI_BUILD_TRIGGER}" ]; then
+          ci-yarn-upgrade --execute
+        fi
+experimental:
+  notify:
+    branches:
+      only:
+        - master
