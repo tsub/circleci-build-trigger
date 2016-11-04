@@ -19,7 +19,7 @@ $ cp .env.template .env # and Set environment variables in .env
 $ export AWS_ACCESS_KEY_ID=<YOUR AWS_ACCESS_KEY_ID>
 $ export AWS_SECRET_ACCESS_KEY=<YOUR AWS_SECRET_ACCESS_KEY>
 $ export SCHEDULE_EXPRESSION="rate(1 weeks)"
-$ npm run deploy # or yarn run deploy
+$ npm run deploy -- -s prod # or yarn run deploy -- -s prod
 ```
 
 ## Requirements
