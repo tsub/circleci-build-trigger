@@ -1,6 +1,5 @@
 'use strict';
 
-require('dotenv').config();
 const axios = require('axios');
 
 axios.defaults.baseURL = 'https://circleci.com/api/v1'
