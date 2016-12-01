@@ -14,7 +14,7 @@ Introduce use cases of this Lambda function.
 ## Quick Start
 
 ```sh
-$ git clone git@github.com:tsub/circleci-build-trigger.git
+$ git clone git@github.com:tsub/circleci-build-trigger.git # or sls install -u https://github.com/tsub/circleci-build-trigger
 $ cd circleci-build-trigger
 $ npm install # or yarn install
 $ cp serverless.env.yml{.template,} # and Set environment variables in .env
