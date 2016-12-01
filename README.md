@@ -1,5 +1,7 @@
 # circleci-build-trigger
 
+[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
+
 Scheduler to build your CircleCI project with [AWS Lambda](http://docs.aws.amazon.com/lambda/latest/dg/welcome.html).
 
 ## Use case
