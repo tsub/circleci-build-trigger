@@ -9,6 +9,7 @@ dependencies:
     - npm install -g npm
     - curl -o- -L https://yarnpkg.com/install.sh | bash
     - yarn --version
+    - yarn cache dir
   override:
     - yarn install
 test:
