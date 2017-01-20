@@ -18,7 +18,6 @@
   },
   "scripts": {
     "deploy": "serverless deploy",
-    "invoke": "serverless invoke -f trigger",
-    "update": "ci-yarn-upgrade --execute"
+    "invoke": "serverless invoke -f trigger"
   }
 }
