@@ -12,8 +12,8 @@ module.exports.trigger = (event, context, callback) => {
   const triggerName = process.env.TRIGGER_NAME;
   const circleJob = process.env.CIRCLE_JOB;
   const buildParameters = {};
-  buildParameters[triggerName] = 'true';
-  buildParameters['CIRCLE_JOB'] = circleJob;
+  if (triggerName !== undefined) buildParameters[triggerName] = 'true';
+  if (circleJob !== undefined) buildParameters['CIRCLE_JOB'] = circleJob;
 
   axios.post(triggerBuildUrl, {
     build_parameters: buildParameters
