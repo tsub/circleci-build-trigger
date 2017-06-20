@@ -10,8 +10,10 @@ module.exports.trigger = (event, context, callback) => {
   const branch = process.env.BRANCH;
   const triggerBuildUrl = `/project/${project}/tree/${branch}?circle-token=${circleToken}`;
   const triggerName = process.env.TRIGGER_NAME;
+  const circleJob = process.env.CIRCLE_JOB;
   const buildParameters = {};
   buildParameters[triggerName] = 'true';
+  buildParameters['CIRCLE_JOB'] = circleJob;
 
   axios.post(triggerBuildUrl, {
     build_parameters: buildParameters

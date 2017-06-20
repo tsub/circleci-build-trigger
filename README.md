@@ -57,9 +57,19 @@ e.g. `master`
 
 ### TRIGGER_NAME
 
+:warning: [DEPRECATED] Recommend using CIRCLE_JOB
+
 Key name to use the [CircleCI build_parameters](https://circleci.com/docs/parameterized-builds/).
 
 e.g. `CIRCLECI_BUILD_TRIGGER`
+
+### CIRCLE_JOB
+
+:mega: Can be used only with CircleCI 2.0
+
+Building job name to use the [CircleCI 2.0 CIRCLE_JOB](https://circleci.com/docs/2.0/env-vars/#build-details).
+
+e.g. `continuous_bundle_update`
 
 ### SCHEDULE_EXPRESSION
 
