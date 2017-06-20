@@ -17,7 +17,7 @@ Introduce use cases of this Lambda function.
 $ git clone git@github.com:tsub/circleci-build-trigger.git # or sls install -u https://github.com/tsub/circleci-build-trigger
 $ cd circleci-build-trigger
 $ npm install # or yarn install
-$ cp serverless.env.yml{.template,} # and Set environment variables in .env
+$ cp serverless.env.yml{.template,} # and Set environment variables in serverless.env.yml
 $ export AWS_ACCESS_KEY_ID=<YOUR AWS_ACCESS_KEY_ID>
 $ export AWS_SECRET_ACCESS_KEY=<YOUR AWS_SECRET_ACCESS_KEY>
 $ export AWS_REGION=<YOUR AWS_REGION>
