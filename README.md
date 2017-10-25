@@ -4,6 +4,12 @@
 
 Scheduler to build your CircleCI project with [AWS Lambda](http://docs.aws.amazon.com/lambda/latest/dg/welcome.html).
 
+## :warning: Deprecation warning :warning:
+
+CircleCI 2.0 released [Scheduling Workflow](https://circleci.com/docs/2.0/workflows/#scheduling-a-workflow).
+
+I strongly recommend using Scheduling Workflow!!
+
 ## Use case
 Introduce use cases of this Lambda function.
 
